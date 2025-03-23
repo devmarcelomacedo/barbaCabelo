@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barbearia do Gabriel</title>
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Barbearia do Gabriel</h1>
+            <p>O melhor corte de cabelo da cidade!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="image-section">
+            <h2>
+                Barbeiro Profissional 1.0
+                <p>Clique na imagem e escolha seu estilo</p>
+            </h2>
+            <div class="barber-image" onclick="showHaircutImage()">
+                <img src="./img/images.jfif" alt="Barbeiro Profissional">
+            </div>
+        </section>
+
+        <section class="haircut-image-section" id="haircutImageSection">
+            <h2>
+                Imagem de Corte de Cabelo
+
+            </h2>
+            <img src="./img/cortes de cabelo.jpg" alt="Corte de Cabelo" class="haircut-image">
+        </section>
+
+        <section class="address-section">
+            <h2>Endereço</h2>
+            <p onclick="showMap()"> Rua Saturnino Bragas, 21 - Bairro Lapa <br>
+                Cidade Campos dos Goytacazes - RJ <br>
+            </p>
+
+        </section>
+
+        <section class="map-section" id="mapSection" style="display: none;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1742769028396!6m8!1m7!1sQfMaIIaAQntjrnfClNAv9Q!2m2!1d-21.75596511209125!2d-41.31531578915582!3f193.31516!4f0!5f0.7820865974627469"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map"></div>
+        </section>
+    </main>
+    <!-- Adicionando o botão do WhatsApp no rodapé -->
+    <footer>
+        <p>&copy; 2025 Barbearia do Gabriel. Todos os direitos reservados.</p>
+        <p>
+            Fale comigo e agende seu horário <br>
+            👇</p>
+        <a href="https://wa.me/5522988332748" target="_blank" class="whatsapp-button">
+            <img src="./img/whatsapp-33.png" width="30" alt="WhatsApp"></a>
+
+    </footer>
+
+
+    <script async src="https://maps.app.goo.gl/xNjfopXdWQfBH9jn8"></script>
+</body>
+
+</html>
